@@ -4,12 +4,12 @@ MODEL_PATH=$(dirname $0)
 BPE_CODES="$MODEL_PATH/bpe.codes"
 BPE_VOCAB="$MODEL_PATH/bpe.vocab"
 
-python3 $MODEL_PATH/custom_constraints.py \
+/home/m25dehgh/anaconda3/envs/IMR/bin/python3 $MODEL_PATH/custom_constraints.py \
     --BPE-codes $BPE_CODES \
     --BPE-vocab $BPE_VOCAB \
     --compute-factor \
 | \
-    python3 -m sockeye.translate \
+/home/m25dehgh/anaconda3/envs/IMR/bin/python3 -m sockeye.translate \
       -m $MODEL_PATH \
       --json-input \
       --output-type json \
