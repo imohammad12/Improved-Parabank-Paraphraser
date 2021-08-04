@@ -19,6 +19,4 @@ paraphrase(sent, ['great', 'dark'], ['enormous'])
 
 For not giving negative/positive constraints give empty list to the paraphrase function
 
-I think you should use an
-`<addr>` element here instead.
 
